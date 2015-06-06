@@ -21,11 +21,11 @@ class TicTacToe
 		p1=0
 		p2=0
 		while !@ticTacToe_board.isFull do  
-			print "#{@player1} please enter your move (0-8, going from left to right in each column): "
+			print "#{@player1} please enter your move (0-8, going from left to right in each row): "
 			puts
 			move = gets.chomp
 			while !checkIfValidPosition(move)
-				print "Invlid position. Try another position (0-8, going from left to right in each column): "
+				print "Invlid position. Try another position (0-8, going from left to right in each row): "
 				move = gets.chomp
 				puts
 			end
@@ -38,11 +38,11 @@ class TicTacToe
 			end
 
 			#Player two operations
-			print "#{@player2} please enter your first move (0-8, going from left to right in each column): "
+			print "#{@player2} please enter your first move (0-8, going from left to right in each row): "
 			puts
 			move = gets.chomp
 			while !checkIfValidPosition(move)
-				print "Invlid position. Try another position (0-8, going from left to right in each column): "
+				print "Invlid position. Try another position (0-8, going from left to right in each row): "
 				move = gets.chomp
 				puts
 			end
