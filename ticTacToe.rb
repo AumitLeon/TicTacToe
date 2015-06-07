@@ -5,7 +5,7 @@ puts "|| Welcome to Tic-Tac-Toe! ||"
 puts "-----------------------------"
 puts puts 
 
-#Primariy class for the Tic-Tac-Toe game. Provides functions that allow player one to play as 'X,' and player two to play as 'O.' 
+#Primary class for the Tic-Tac-Toe game. Provides functions that allow player one to play as 'X,' and player two to play as 'O.' 
 class TicTacToe 
 	# Initializes several instance variables.
 	# Params:
@@ -21,6 +21,7 @@ class TicTacToe
 	#Generates gameplay events such as turns, announcement of victories and draws.
 	def play
 		if @ticTacToe_board.isEmpty?
+			puts 
 			puts "Board is empty."
 		else 
 			puts "Board is not empty."
@@ -65,6 +66,7 @@ class TicTacToe
 			#Update te board once the position given by the user is valid. 
 			@ticTacToe_board.updateBoard("O", move)
 			@ticTacToe_board.displayBoard			#Display the board aftere updating it. 
+			puts
 			p2_counter+=1							#Increment player two's urn counter.
 			if p2_counter >= 3 && checkWinner != nil 		#If after three turn there is a winner, break from the loop.
 				break
@@ -252,3 +254,36 @@ puts
 newGame = TicTacToe.new(player_one, player_two)
 #Play the game. 
 newGame.play
+
+puts
+print "Would you like to start a new game? Type 'yes' or 'no': "
+	input = gets.chomp
+	input.downcase!
+puts
+
+#Menu that allows users to start a new game if they choose to do so.
+#Check user input. 
+while input != "yes" && input != "no"
+	print "Sorry, I couldn't understand that. Would you like to start a new game? Please type 'yes' or 'no': "
+		input = gets.chomp
+		input.downcase!
+	puts
+end
+
+#Start new game if prompted by user, or end program. 
+while input != "no"
+	new_game = TicTacToe.new(player_one, player_two)
+	new_game.play
+	puts
+	print "Would you like to start a new game? Type 'yes' or 'no': "
+		input = gets.chomp
+		input.downcase!
+	puts
+	#Check user input.
+	while input != "yes" && input != "no"
+	print "Sorry, I couldn't understand that. Would you like to start a new game? Please type 'yes' or 'no': "
+		input = gets.chomp
+		input.downcase!
+	puts
+	end
+end
