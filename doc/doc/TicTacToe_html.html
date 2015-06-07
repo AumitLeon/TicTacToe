@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>TicTacToe.html - RDoc Documentation</title>
+
+<link href="../fonts.css" rel="stylesheet">
+<link href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/search_index.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/searcher.js"></script>
+<script src="../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../doc/Board_html.html">Board.html</a>
+  
+    <li><a href="../doc/TicTacToe_html.html">TicTacToe.html</a>
+  
+    <li><a href="../doc/fonts_css.html">fonts.css</a>
+  
+    <li><a href="../doc/index_html.html">index.html</a>
+  
+    <li><a href="../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li><a href="../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../doc/js/navigation_js.html">navigation.js</a>
+  
+    <li><a href="../doc/js/search_js.html">search.js</a>
+  
+    <li><a href="../doc/js/search_index_js.html">search_index.js</a>
+  
+    <li><a href="../doc/js/searcher_js.html">searcher.js</a>
+  
+    <li><a href="../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li><a href="../doc/table_of_contents_html.html">table_of_contents.html</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page doc/TicTacToe.html">
+
+<p>&lt;!DOCTYPE html&gt;</p>
+
+<p>&lt;html&gt; &lt;head&gt; &lt;meta charset=“UTF-8”&gt;</p>
+
+<p>&lt;title&gt;class <a href="../TicTacToe.html">TicTacToe</a> - RDoc
+Documentation&lt;/title&gt;</p>
+
+<p>&lt;link href=“./fonts.css” rel=“stylesheet”&gt; &lt;link href=“./rdoc.css”
+rel=“stylesheet”&gt;</p>
+
+<p>&lt;script type=“text/javascript”&gt;</p>
+
+<pre>var rdoc_rel_prefix = &quot;./&quot;;</pre>
+
+<p>&lt;/script&gt;</p>
+
+<p>&lt;script src=“./js/jquery.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/navigation.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/search_index.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/search.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/searcher.js”&gt;&lt;/script&gt; &lt;script
+src=“./js/darkfish.js”&gt;&lt;/script&gt;</p>
+
+<p>&lt;body id=“top” role=“document” class=“class”&gt; &lt;nav
+role=“navigation”&gt;</p>
+
+<pre>&lt;div id=&quot;project-navigation&quot;&gt;
+  &lt;div id=&quot;home-section&quot; role=&quot;region&quot; title=&quot;Quick navigation&quot; class=&quot;nav-section&quot;&gt;
+&lt;h2&gt;
+  &lt;a href=&quot;./index.html&quot; rel=&quot;home&quot;&gt;Home&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;div id=&quot;table-of-contents-navigation&quot;&gt;
+  &lt;a href=&quot;./table_of_contents.html#pages&quot;&gt;Pages&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#classes&quot;&gt;Classes&lt;/a&gt;
+  &lt;a href=&quot;./table_of_contents.html#methods&quot;&gt;Methods&lt;/a&gt;
+&lt;/div&gt;</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>  &lt;div id=&quot;search-section&quot; role=&quot;search&quot; class=&quot;project-section initially-hidden&quot;&gt;
+&lt;form action=&quot;#&quot; method=&quot;get&quot; accept-charset=&quot;utf-8&quot;&gt;
+  &lt;div id=&quot;search-field-wrapper&quot;&gt;
+    &lt;input id=&quot;search-field&quot; role=&quot;combobox&quot; aria-label=&quot;Search&quot;
+           aria-autocomplete=&quot;list&quot; aria-controls=&quot;search-results&quot;
+           type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot; spellcheck=&quot;false&quot;
+           title=&quot;Type to search, Up and Down to navigate, Enter to load&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;ul id=&quot;search-results&quot; aria-label=&quot;Search Results&quot;
+      aria-busy=&quot;false&quot; aria-expanded=&quot;false&quot;
+      aria-atomic=&quot;false&quot; class=&quot;initially-hidden&quot;&gt;&lt;/ul&gt;
+&lt;/form&gt;</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>&lt;/div&gt;
+
+&lt;div id=&quot;class-metadata&quot;&gt;
+
+  &lt;div id=&quot;parent-class-section&quot; class=&quot;nav-section&quot;&gt;
+&lt;h3&gt;Parent&lt;/h3&gt;
+
+&lt;p class=&quot;link&quot;&gt;Object</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>&lt;!-- Method Quickref --&gt;</pre>
+
+<p>&lt;div id=“method-list-section” class=“nav-section”&gt;</p>
+
+<pre>&lt;h3&gt;Methods&lt;/h3&gt;
+
+&lt;ul class=&quot;link-list&quot; role=&quot;directory&quot;&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-c-new&quot;&gt;::new&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-checkIfValidPosition-3F&quot;&gt;#checkIfValidPosition?&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-checkWinner&quot;&gt;#checkWinner&lt;/a&gt;
+
+  &lt;li &gt;&lt;a href=&quot;#method-i-play&quot;&gt;#play&lt;/a&gt;
+
+&lt;/ul&gt;</pre>
+
+<p>&lt;/div&gt;</p>
+
+<pre>&lt;/div&gt;</pre>
+
+<p>&lt;/nav&gt;</p>
+
+<p>&lt;main role=“main” aria-labelledby=“class-TicTacToe”&gt;</p>
+
+<pre class="ruby"><span class="ruby-operator">&lt;</span><span class="ruby-identifier">h1</span> <span class="ruby-identifier">id</span>=<span class="ruby-string">&quot;class-TicTacToe&quot;</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;class&quot;</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-keyword">class</span> <span class="ruby-constant">TicTacToe</span>
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/h1&gt;
+
+&lt;section class=&quot;description&quot;&gt;
+</span></pre>
+
+<p>&lt;p&gt;Primariy class for the Tic-Tac-Toe game. Provides functions that
+allow player one to play as &amp;#39;X,&amp;#39; and player two to play as
+&amp;#39;O.&amp;#39;&lt;/p&gt;</p>
+
+<pre>&lt;/section&gt;
+
+&lt;section id=&quot;5Buntitled-5D&quot; class=&quot;documentation-section&quot;&gt;
+
+   &lt;section id=&quot;public-class-5Buntitled-5D-method-details&quot; class=&quot;method-section&quot;&gt;
+     &lt;header&gt;
+       &lt;h3&gt;Public Class Methods&lt;/h3&gt;
+     &lt;/header&gt;
+
+    &lt;div id=&quot;method-c-new&quot; class=&quot;method-detail &quot;&gt;
+
+      &lt;div class=&quot;method-heading&quot;&gt;
+        &lt;span class=&quot;method-name&quot;&gt;new&lt;/span&gt;&lt;span
+          class=&quot;method-args&quot;&gt;(playerOne, playerTwo)&lt;/span&gt;
+
+        &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class=&quot;method-description&quot;&gt;
+
+        &lt;p&gt;Initializes several instance variables. Params:</pre>
+
+<p><code>player1</code>::Player one (will play as X).
+<code>player2</code>::Player two (will play as Y).&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;new-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File ticTacToe.rb, line 14&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;initialize&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;playerOne&lt;/span&gt;, &lt;span
+class=“ruby-identifier”&gt;playerTwo&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;playerOne&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;playerTwo&lt;/span&gt;
+&lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt; = &lt;span class=&quot;ruby-constant&quot;&gt;Board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;new&lt;/span&gt;          &lt;span class=&quot;ruby-comment&quot;&gt;#Creates an object of the Board class, which will serve as our playing board.&lt;/span&gt;
+&lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;displayBoard&lt;/span&gt;         &lt;span class=&quot;ruby-comment&quot;&gt;#Instance variable since it is specific to this use of the class. &lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/section&gt;
+
+ &lt;section id=&quot;public-instance-5Buntitled-5D-method-details&quot; class=&quot;method-section&quot;&gt;
+   &lt;header&gt;
+     &lt;h3&gt;Public Instance Methods&lt;/h3&gt;
+   &lt;/header&gt;
+
+  &lt;div id=&quot;method-i-checkIfValidPosition-3F&quot; class=&quot;method-detail &quot;&gt;
+
+    &lt;div class=&quot;method-heading&quot;&gt;
+      &lt;span class=&quot;method-name&quot;&gt;checkIfValidPosition?&lt;/span&gt;&lt;span
+        class=&quot;method-args&quot;&gt;(position)&lt;/span&gt;
+
+      &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;method-description&quot;&gt;
+
+      &lt;p&gt;Checks if the given position is valid in terms of our given &lt;a</pre>
+
+<p>href=“Board.html”&gt;Board&lt;/a&gt;.  Params:&lt;/p&gt; &lt;dl
+class=“rdoc-list note-list”&gt;&lt;dt&gt;<code>position</code> &lt;dd&gt;
+&lt;p&gt;The given position meant to correspond to a blank cell in the
+&lt;a href=“Board.html”&gt;Board&lt;/a&gt;.&lt;/p&gt;
+&lt;/dd&gt;&lt;/dl&gt;</p>
+
+<p>&lt;p&gt;Returns: True if position is valid, false if otherwise.&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;checkIfValidPosition-3F-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File ticTacToe.rb, line 90&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;checkIfValidPosition?&lt;/span&gt;(&lt;span
+class=“ruby-identifier”&gt;position&lt;/span&gt;)</p>
+
+<pre>&lt;span class=&quot;ruby-identifier&quot;&gt;@@position__&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;position&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;to_i&lt;/span&gt;                                  &lt;span class=&quot;ruby-comment&quot;&gt;#Convert the given position into an integer.&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#If the position does not contian an &amp;#39;X&amp;#39; or &amp;#39;O,&amp;#39; or is not in the range [0. 8], the given position is invalid. &lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;@@position__&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;@@position__&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;O&amp;quot;&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@position__&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@position__&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;-1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+        &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;method-i-checkWinner&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;checkWinner&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Checks to see if there is a winner.  Returns: player1 if three X&amp;#39;s are</pre>
+
+<p>adjacent, player2 if three O&amp;#39;s are adjacenet.&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;checkWinner-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File ticTacToe.rb, line 103&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;checkWinner&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-comment&quot;&gt;#-------------------------Horizontal Cases-------------------------------------------------------------&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#If each element in this column is equal, and is not empty, we have a winner. &lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Column 1:&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Column 2:&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;3&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;4&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;3&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;5&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;3&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;3&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Column 3:&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;6&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;7&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;6&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;8&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;6&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;6&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;ruby-comment&quot;&gt;#----------------------------Vertical cases--------------------------------------------------------&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#If each element is equal, and not empty, then we have a winner.&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Checking for adjacency and equivalency within each row.&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Row 1:&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;3&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;6&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Row 2:&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;4&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;7&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Row 3:&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;5&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;8&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;ruby-comment&quot;&gt;#-------------------------------Diagonal cases-----------------------------------------------------&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Check for equivalency in the diagonals.&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Left corner to right corner.&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;4&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;8&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-comment&quot;&gt;#Right corner to left corner.&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;4&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;6&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;-&amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;getItem&lt;/span&gt;(&lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;ruby-operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player1&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+                &lt;span class=&quot;ruby-keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;@@player2&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>    &lt;/div&gt;
+
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div id=&quot;method-i-play&quot; class=&quot;method-detail &quot;&gt;
+
+  &lt;div class=&quot;method-heading&quot;&gt;
+    &lt;span class=&quot;method-name&quot;&gt;play&lt;/span&gt;&lt;span
+      class=&quot;method-args&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;method-click-advice&quot;&gt;click to toggle source&lt;/span&gt;
+
+  &lt;/div&gt;
+
+  &lt;div class=&quot;method-description&quot;&gt;
+
+    &lt;p&gt;Generates gameplay events such as turns, announcement of victories and</pre>
+
+<p>draws. p1 – The counter for the number of turns that player one has taken.
+p2 – The counter for the number of turns that player two has
+taken.&lt;/p&gt;</p>
+
+<pre>&lt;div class=&quot;method-source-code&quot; id=&quot;play-source&quot;&gt;
+  &lt;pre&gt;&lt;span class=&quot;ruby-comment&quot;&gt;# File ticTacToe.rb, line 24&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;def&lt;/span&gt; &lt;span
+class=“ruby-identifier”&gt;play&lt;/span&gt;</p>
+
+<pre>&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;isEmpty?&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Board is empty.&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt; 
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Board is not empty.&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;p1_counter&lt;/span&gt; = &lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;ruby-identifier&quot;&gt;p2_counter&lt;/span&gt; = &lt;span class=&quot;ruby-value&quot;&gt;0&lt;/span&gt;
+
+&lt;span class=&quot;ruby-comment&quot;&gt;#Until the board is not empty, continue to provide turns for player one and two. &lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;isFull?&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;do&lt;/span&gt;  
+        &lt;span class=&quot;ruby-identifier&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;ruby-node&quot;&gt;&amp;quot;#{@@player1}, please enter your move (0-8 positions, going from left to right in each row): &amp;quot;&lt;/span&gt;         &lt;span class=&quot;ruby-comment&quot;&gt;#Print user input on same line as prompt.&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;gets&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;chomp&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt;
+        &lt;span class=&quot;ruby-comment&quot;&gt;#If the position entered us invalid, ask the user to enter a valid position. &lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;checkIfValidPosition?&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt;)
+                &lt;span class=&quot;ruby-identifier&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Invlid position. Try another position (0-8 positions, going from left to right in each row): &amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;gets&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;chomp&lt;/span&gt;
+                &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+        &lt;span class=&quot;ruby-comment&quot;&gt;#Update the board with player one&amp;#39;s game element (X) and the position on the board specified by the player. &lt;/span&gt;
+        &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;updateBoard&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;X&amp;quot;&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt;)
+        &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;displayBoard&lt;/span&gt;                                &lt;span class=&quot;ruby-comment&quot;&gt;#Display the board after updating it. &lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;p1_counter&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;                                                                &lt;span class=&quot;ruby-comment&quot;&gt;#Increment player one&amp;#39;s turn counter. &lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;p1_counter&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;checkWinner&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;nil&lt;/span&gt;     &lt;span class=&quot;ruby-comment&quot;&gt;#If after three turns there is a winner, break from the loop. &lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;elsif&lt;/span&gt; &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;isFull?&lt;/span&gt;                               &lt;span class=&quot;ruby-comment&quot;&gt;#Break if the board is full.&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+
+        &lt;span class=&quot;ruby-comment&quot;&gt;#Player two operations.&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;ruby-node&quot;&gt;&amp;quot;#{@@player2}, please enter your move (0-8 positions, going from left to right in each row): &amp;quot;&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;gets&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;chomp&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt;
+        &lt;span class=&quot;ruby-comment&quot;&gt;#If given position is not valid, allow the user to enter another position.&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;ruby-identifier&quot;&gt;checkIfValidPosition?&lt;/span&gt;(&lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt;)
+                &lt;span class=&quot;ruby-identifier&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;Invalid position. Try another position (0-8, going from left to right in each row): &amp;quot;&lt;/span&gt;
+                &lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;gets&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;chomp&lt;/span&gt;
+                &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+        &lt;span class=&quot;ruby-comment&quot;&gt;#Update te board once the position given by the user is valid. &lt;/span&gt;
+        &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;updateBoard&lt;/span&gt;(&lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;O&amp;quot;&lt;/span&gt;, &lt;span class=&quot;ruby-identifier&quot;&gt;move&lt;/span&gt;)
+        &lt;span class=&quot;ruby-ivar&quot;&gt;@ticTacToe_board&lt;/span&gt;.&lt;span class=&quot;ruby-identifier&quot;&gt;displayBoard&lt;/span&gt;                        &lt;span class=&quot;ruby-comment&quot;&gt;#Display the board aftere updating it. &lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;p2_counter&lt;/span&gt;&lt;span class=&quot;ruby-operator&quot;&gt;+=&lt;/span&gt;&lt;span class=&quot;ruby-value&quot;&gt;1&lt;/span&gt;                                                        &lt;span class=&quot;ruby-comment&quot;&gt;#Increment player two&amp;#39;s urn counter.&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;p2_counter&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;ruby-value&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;checkWinner&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;nil&lt;/span&gt;             &lt;span class=&quot;ruby-comment&quot;&gt;#If after three turn there is a winner, break from the loop.&lt;/span&gt;
+                &lt;span class=&quot;ruby-keyword&quot;&gt;break&lt;/span&gt;
+        &lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;ruby-comment&quot;&gt;#If there is a winner, display the winner, if the loop wasn&amp;#39;t broken by a break statement, the board is a full-- draw.&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;ruby-identifier&quot;&gt;checkWinner&lt;/span&gt; &lt;span class=&quot;ruby-operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;ruby-keyword&quot;&gt;nil&lt;/span&gt;
+        &lt;span class=&quot;ruby-ivar&quot;&gt;@winner&lt;/span&gt; = &lt;span class=&quot;ruby-identifier&quot;&gt;checkWinner&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;ruby-node&quot;&gt;&amp;quot;Congratulations #{@winner}! You have won.&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;ruby-identifier&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;ruby-string&quot;&gt;&amp;quot;No body wins. Draw!&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;ruby-keyword&quot;&gt;end&lt;/span&gt;</pre>
+
+<p>&lt;span class=“ruby-keyword”&gt;end&lt;/span&gt;&lt;/pre&gt;</p>
+
+<pre>        &lt;/div&gt;
+
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/section&gt;
+
+&lt;/section&gt;</pre>
+
+<p>&lt;/main&gt;</p>
+
+<p>&lt;footer id=“validator-badges” role=“contentinfo”&gt;</p>
+
+<pre>&lt;p&gt;&lt;a href=&quot;http://validator.w3.org/check/referer&quot;&gt;Validate&lt;/a&gt;
+&lt;p&gt;Generated by &lt;a href=&quot;http://rdoc.rubyforge.org&quot;&gt;RDoc&lt;/a&gt; 4.1.0.
+&lt;p&gt;Based on &lt;a href=&quot;http://deveiate.org/projects/Darkfish-Rdoc/&quot;&gt;Darkfish&lt;/a&gt; by &lt;a href=&quot;http://deveiate.org&quot;&gt;Michael Granger&lt;/a&gt;.</pre>
+
+<p>&lt;/footer&gt;</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

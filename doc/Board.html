@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Board - RDoc Documentation</title>
+
+<link href="./fonts.css" rel="stylesheet">
+<link href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/navigation.js"></script>
+<script src="./js/search_index.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/searcher.js"></script>
+<script src="./js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">Object
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-displayBoard">#displayBoard</a>
+    
+    <li ><a href="#method-i-getItem">#getItem</a>
+    
+    <li ><a href="#method-i-isEmpty-3F">#isEmpty?</a>
+    
+    <li ><a href="#method-i-isFull-3F">#isFull?</a>
+    
+    <li ><a href="#method-i-updateBoard">#updateBoard</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Board">
+  <h1 id="class-Board" class="class">
+    class Board
+  </h1>
+
+  <section class="description">
+    
+<p>Creation of the matrix. The <a href="Board.html">Board</a> is a seperate
+class so that it is more modular. This board can be modified to fit the
+needs of users for other projects, and can be expanded or made smaller from
+its standard 3x3 size. To remain a box, the overall size must remain a
+perfect square (4. 9. 16. 25…).</p>
+
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Initialize the class and array that will serve as our matrix/game <a
+href="Board.html">Board</a>. More elements can be added, and elements an be
+taken away.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 182</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
+        <span class="ruby-identifier">@@board_</span> = [<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>]
+        <span class="ruby-identifier">@@element_counter</span> = <span class="ruby-value">0</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-displayBoard" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">displayBoard</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Display the board and the game element within each cell.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="displayBoard-source">
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 188</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">displayBoard</span> 
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot; #{@@board_[0]} | #{@@board_[1]} | #{@@board_[2]}&quot;</span>              <span class="ruby-comment">#Indices of the array correspond to positions in the cell. </span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot; #{@@board_[3]} | #{@@board_[4]} | #{@@board_[5]}&quot;</span>              <span class="ruby-comment">#3x3, begins at 0, ends at 8, total of 9 cells. </span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot; #{@@board_[6]} | #{@@board_[7]} | #{@@board_[8]}&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getItem" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getItem</span><span
+            class="method-args">(position)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Get the item at the given position.  Params:  <code>position</code>::The
+position within the <a href="Board.html">Board</a> we should visit in order
+to get that item.  Returns The item in the given cell.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="getItem-source">
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 238</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">getItem</span> (<span class="ruby-identifier">position</span>)
+        <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@board_</span>[<span class="ruby-identifier">position</span>.<span class="ruby-identifier">to_i</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-isEmpty-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">isEmpty?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Check if the <a href="Board.html">Board</a> is empty. Returns: True if
+empty, false if otherwise.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="isEmpty-3F-source">
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 197</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">isEmpty?</span>
+        <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>                                                                                                                         <span class="ruby-comment">#The iterator that will increment as we iterate through the cells of the game Board.</span>
+        <span class="ruby-comment">#If element at position i is empty (signified by &#39;-&#39;), continue iteration.</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">@@board_</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;-&quot;</span>                      
+                <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span><span class="ruby-value">1</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">8</span>                                      <span class="ruby-comment">#If the iterator doesn&#39;t make it to 8, then the board was not fully empty.</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-isFull-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">isFull?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Check if the <a href="Board.html">Board</a> is full.  Params: Returns: true
+if <a href="Board.html">Board</a> is full, false if otherwise.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="isFull-3F-source">
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 214</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">isFull?</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">@@element_counter</span> <span class="ruby-operator">==</span> <span class="ruby-value">9</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-updateBoard" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">updateBoard</span><span
+            class="method-args">(element, position)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Update the <a href="Board.html">Board</a> with the given game element and
+the position.  Params: <code>element</code>::The element to be added to the
+given cell. <code>position</code>::The position (cell) on the <a
+href="Board.html">Board</a> where the given element should be added.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="updateBoard-source">
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 226</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">updateBoard</span>(<span class="ruby-identifier">element</span>, <span class="ruby-identifier">position</span>)
+        <span class="ruby-identifier">@@xOrY</span> = <span class="ruby-identifier">element</span>
+        <span class="ruby-identifier">@@position_</span> = <span class="ruby-identifier">position</span>
+        <span class="ruby-identifier">@@board_</span>[<span class="ruby-identifier">@@position_</span>.<span class="ruby-identifier">to_i</span>] = <span class="ruby-identifier">@@xOrY</span>                                           <span class="ruby-comment">#Update the board at the given cell. </span>
+        <span class="ruby-identifier">@@element_counter</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>                                                                  <span class="ruby-comment">#Increment the element counter. </span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
