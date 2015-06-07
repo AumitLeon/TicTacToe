@@ -78,7 +78,7 @@ class TicTacToe
 			@winner = checkWinner
 			puts "Congratulations #{@winner}! You have won."
 		else
-			puts "No body wins. Draw!"
+			puts "Nobody wins. Draw!"
 		end
 	end
 	
