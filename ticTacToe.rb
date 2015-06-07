@@ -19,8 +19,6 @@ class TicTacToe
 	end
 
 	#Generates gameplay events such as turns, announcement of victories and draws.
-	#p1 -- The counter for the number of turns that player one has taken.
-	#p2 -- The counter for the number of turns that player two has taken.
 	def play
 		if @ticTacToe_board.isEmpty?
 			puts "Board is empty."
@@ -29,8 +27,8 @@ class TicTacToe
 		end
 
 		puts
-		p1_counter = 0
-		p2_counter = 0
+		p1_counter = 0 						#p1 -- The counter for the number of turns that player one has taken.
+		p2_counter = 0 						#p2 -- The counter for the number of turns that player two has taken.
 
 		#Until the board is not empty, continue to provide turns for player one and two. 
 		while !@ticTacToe_board.isFull? do  
@@ -81,10 +79,10 @@ class TicTacToe
 			puts "No body wins. Draw!"
 		end
 	end
-
+	
 	# Checks if the given position is valid in terms of our given Board. 
 	# Params:
-	# +position+:: The given position meant to correspond to a blank cell in the Board. 
+	# +position+::The given position meant to correspond to a blank cell in the Board.
 	# Returns:
 	# True if position is valid, false if otherwise. 
 	def checkIfValidPosition?(position)
@@ -179,26 +177,25 @@ end
 
 #Creation of the matrix. The Board is a seperate class so that it is more modular. This board can be modified to fit the needs of users for other projects, and can be expanded or made smaller from its standard 3x3 size. To remain a box, the overall size must remain a perfect square (4. 9. 16. 25...).
 class Board 
-	#Initialize the class and array that will serve as our matrix/game Board. More elements can be added, and elements an be taken away. 
-	# +board_+:: Create the array that will serve as our Tic-Tac-Toe Board. 
+
+	# Initialize the class and array that will serve as our matrix/game Board. More elements can be added, and elements an be taken away. 
 	def initialize
 		@@board_ = ["-","-","-","-","-","-","-","-","-"]
 		@@element_counter = 0
 	end
 
-	#Display the board and the game element within each cell. 
+	# Display the board and the game element within each cell. 
 	def displayBoard 
 		puts " #{@@board_[0]} | #{@@board_[1]} | #{@@board_[2]}"		#Indices of the array correspond to positions in the cell. 
 		puts " #{@@board_[3]} | #{@@board_[4]} | #{@@board_[5]}"		#3x3, begins at 0, ends at 8, total of 9 cells. 
 		puts " #{@@board_[6]} | #{@@board_[7]} | #{@@board_[8]}"
 	end
 
-	#Check if the Board is empty.
-	# +i+:: The iterator that will increment as we iterate through the cells of the game Board.
-	# Return:
+	# Check if the Board is empty.
+	# Returns:
 	# True if empty, false if otherwise. 
 	def isEmpty?
-		i = 0
+		i = 0 															#The iterator that will increment as we iterate through the cells of the game Board.
 		#If element at position i is empty (signified by '-'), continue iteration.
 		while @@board_[i] == "-"			
 			i +=1
