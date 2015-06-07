@@ -146,7 +146,7 @@ taken away.</p>
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 182</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 184</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>
         <span class="ruby-identifier">@@board_</span> = [<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>,<span class="ruby-string">&quot;-&quot;</span>]
         <span class="ruby-identifier">@@element_counter</span> = <span class="ruby-value">0</span>
@@ -188,7 +188,7 @@ taken away.</p>
 
           
           <div class="method-source-code" id="displayBoard-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 188</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 190</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">displayBoard</span> 
         <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot; #{@@board_[0]} | #{@@board_[1]} | #{@@board_[2]}&quot;</span>              <span class="ruby-comment">#Indices of the array correspond to positions in the cell. </span>
         <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot; #{@@board_[3]} | #{@@board_[4]} | #{@@board_[5]}&quot;</span>              <span class="ruby-comment">#3x3, begins at 0, ends at 8, total of 9 cells. </span>
@@ -225,7 +225,7 @@ to get that item.  Returns The item in the given cell.</p>
 
           
           <div class="method-source-code" id="getItem-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 238</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 240</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">getItem</span> (<span class="ruby-identifier">position</span>)
         <span class="ruby-keyword">return</span> <span class="ruby-identifier">@@board_</span>[<span class="ruby-identifier">position</span>.<span class="ruby-identifier">to_i</span>]
 <span class="ruby-keyword">end</span></pre>
@@ -259,7 +259,7 @@ empty, false if otherwise.</p>
 
           
           <div class="method-source-code" id="isEmpty-3F-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 197</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 199</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">isEmpty?</span>
         <span class="ruby-identifier">i</span> = <span class="ruby-value">0</span>                                                                                                                         <span class="ruby-comment">#The iterator that will increment as we iterate through the cells of the game Board.</span>
         <span class="ruby-comment">#If element at position i is empty (signified by &#39;-&#39;), continue iteration.</span>
@@ -302,7 +302,7 @@ if <a href="Board.html">Board</a> is full, false if otherwise.</p>
 
           
           <div class="method-source-code" id="isFull-3F-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 214</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 216</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">isFull?</span>
         <span class="ruby-keyword">if</span> <span class="ruby-identifier">@@element_counter</span> <span class="ruby-operator">==</span> <span class="ruby-value">9</span>
                 <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span>
@@ -342,7 +342,7 @@ href="Board.html">Board</a> where the given element should be added.</p>
 
           
           <div class="method-source-code" id="updateBoard-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 226</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 228</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">updateBoard</span>(<span class="ruby-identifier">element</span>, <span class="ruby-identifier">position</span>)
         <span class="ruby-identifier">@@xOrY</span> = <span class="ruby-identifier">element</span>
         <span class="ruby-identifier">@@position_</span> = <span class="ruby-identifier">position</span>

@@ -94,7 +94,7 @@
 
   <section class="description">
     
-<p>Primariy class for the Tic-Tac-Toe game. Provides functions that allow
+<p>Primary class for the Tic-Tac-Toe game. Provides functions that allow
 player one to play as &#39;X,&#39; and player two to play as &#39;O.&#39;</p>
 
   </section>
@@ -187,7 +187,7 @@ otherwise.</p>
 
           
           <div class="method-source-code" id="checkIfValidPosition-3F-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 88</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 90</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">checkIfValidPosition?</span>(<span class="ruby-identifier">position</span>)
         <span class="ruby-identifier">@@position__</span> = <span class="ruby-identifier">position</span>.<span class="ruby-identifier">to_i</span>                                  <span class="ruby-comment">#Convert the given position into an integer.</span>
         <span class="ruby-comment">#If the position does not contian an &#39;X&#39; or &#39;O,&#39; or is not in the range [0. 8], the given position is invalid. </span>
@@ -227,7 +227,7 @@ adjacent, player2 if three O&#39;s are adjacenet.</p>
 
           
           <div class="method-source-code" id="checkWinner-source">
-            <pre><span class="ruby-comment"># File ticTacToe.rb, line 101</span>
+            <pre><span class="ruby-comment"># File ticTacToe.rb, line 103</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">checkWinner</span>
         <span class="ruby-comment">#-------------------------Horizontal Cases-------------------------------------------------------------</span>
         <span class="ruby-comment">#If each element in this column is equal, and is not empty, we have a winner. </span>
@@ -336,6 +336,7 @@ draws.</p>
             <pre><span class="ruby-comment"># File ticTacToe.rb, line 22</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">play</span>
         <span class="ruby-keyword">if</span> <span class="ruby-ivar">@ticTacToe_board</span>.<span class="ruby-identifier">isEmpty?</span>
+                <span class="ruby-identifier">puts</span> 
                 <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Board is empty.&quot;</span>
         <span class="ruby-keyword">else</span> 
                 <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Board is not empty.&quot;</span>
@@ -380,6 +381,7 @@ draws.</p>
                 <span class="ruby-comment">#Update te board once the position given by the user is valid. </span>
                 <span class="ruby-ivar">@ticTacToe_board</span>.<span class="ruby-identifier">updateBoard</span>(<span class="ruby-string">&quot;O&quot;</span>, <span class="ruby-identifier">move</span>)
                 <span class="ruby-ivar">@ticTacToe_board</span>.<span class="ruby-identifier">displayBoard</span>                        <span class="ruby-comment">#Display the board aftere updating it. </span>
+                <span class="ruby-identifier">puts</span>
                 <span class="ruby-identifier">p2_counter</span><span class="ruby-operator">+=</span><span class="ruby-value">1</span>                                                        <span class="ruby-comment">#Increment player two&#39;s urn counter.</span>
                 <span class="ruby-keyword">if</span> <span class="ruby-identifier">p2_counter</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-value">3</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">checkWinner</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>             <span class="ruby-comment">#If after three turn there is a winner, break from the loop.</span>
                         <span class="ruby-keyword">break</span>
