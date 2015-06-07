@@ -178,7 +178,7 @@ Aumit, please enter your move (0-8 positions, going from left to right in each r
  X | X | O
  O | X | O
 
-No body wins. Draw!
+Nobody wins. Draw!
 
 Would you like to start a new game? Type 'yes' or 'no': no
 
